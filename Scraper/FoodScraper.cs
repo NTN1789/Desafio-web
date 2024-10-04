@@ -2,8 +2,9 @@ using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
 using Models;
-namespace Scraper
 
+
+namespace Scraper
 {
     public class FoodScraper
     {
@@ -13,7 +14,6 @@ namespace Scraper
         {
             var web = new HtmlWeb();
             var doc = web.Load(url);
-
             var foodRows = doc.DocumentNode.SelectNodes("//table//tr");
             var foodItems = new List<FoodItem>();
 
@@ -25,15 +25,15 @@ namespace Scraper
                 var nomeCientifico = row.SelectSingleNode(".//td[3]")?.InnerText.Trim();
                 var grupo = row.SelectSingleNode(".//td[4]")?.InnerText.Trim();
 
-         var foodItem = new FoodItem
-{
-    Codigo = codigo ?? string.Empty,               
-    Nome = nome ?? string.Empty,                  
-    NomeCientifico = nomeCientifico ?? string.Empty, 
-    Grupo = grupo ?? string.Empty                  
-};
+                var foodItem = new FoodItem
+                {
+                    Codigo = codigo ?? string.Empty,
+                    Nome = nome ?? string.Empty,
+                    NomeCientifico = nomeCientifico ?? string.Empty,
+                    Grupo = grupo ?? string.Empty,
+                    DetailData = new List<string[]>() 
+                };
 
-              
                 var linkNode = nomeNode?.SelectSingleNode(".//a");
                 if (linkNode != null)
                 {
@@ -69,5 +69,3 @@ namespace Scraper
         }
     }
 }
-
-

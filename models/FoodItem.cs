@@ -8,6 +8,7 @@ namespace Models
         public string Nome { get; set; } = string.Empty; 
         public string NomeCientifico { get; set; } = string.Empty;  
         public string Grupo { get; set; } = string.Empty; 
+         public string DetalheUrl { get; set; } = string.Empty; 
         public List<string[]> DetailData { get; set; } = new List<string[]>();
     }
 }

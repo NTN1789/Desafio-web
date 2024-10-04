@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/d/Meus Documentos/Area de Trabalho/Js/webScraping/webScraping.csproj": {}
+    "/mnt/d/Meus Documentos/Area de Trabalho/Js/Desafio-web/webScraping.csproj": {}
   },
   "projects": {
-    "/mnt/d/Meus Documentos/Area de Trabalho/Js/webScraping/webScraping.csproj": {
+    "/mnt/d/Meus Documentos/Area de Trabalho/Js/Desafio-web/webScraping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/d/Meus Documentos/Area de Trabalho/Js/webScraping/webScraping.csproj",
+        "projectUniqueName": "/mnt/d/Meus Documentos/Area de Trabalho/Js/Desafio-web/webScraping.csproj",
         "projectName": "webScraping",
-        "projectPath": "/mnt/d/Meus Documentos/Area de Trabalho/Js/webScraping/webScraping.csproj",
+        "projectPath": "/mnt/d/Meus Documentos/Area de Trabalho/Js/Desafio-web/webScraping.csproj",
         "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/mnt/d/Meus Documentos/Area de Trabalho/Js/webScraping/obj/",
+        "outputPath": "/mnt/d/Meus Documentos/Area de Trabalho/Js/Desafio-web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/root/.nuget/NuGet/NuGet.Config"
